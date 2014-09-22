@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Aum Freek's facebook</title>
+    <title>Spanning Columns</title>
+        
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <!-- import your css file by coping the <link href="yourcssfilename.css" rel="stylesheet"> and paste it under this comment -->
+    <!-- http://designmodo.com/audio-player/ -->
+
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="myCss.css" rel="stylesheet">
+
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    
+    <!--Light box-->
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" >
+
+        $(document).ready(function(){
+        $(".thumbnail").click(function(){
+        var address= $(this).attr("src");
+        $("#popup").fadeIn("slow");
+        $("#lightbox").attr("src",address);
+        });
+        $("#close").click(function(){
+        $("#popup").fadeOut("fast");
+        });
+        });
+    </script>
+
+    <style type="text/css">
+
+        #popup{
+        background:#000000;
+        height:100%;
+        width: 100%;
+        position:fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        }
+        #center{
+        border: 10px solid #121212;
+        margin: 1% auto;
+        width: 1000px;
+        height: 1000px;
+        
+        }
+        #close{
+        float: right;
+        position: absolute;
+        top: 20%;
+        }
+    
+    </style> 
+
+
+  </head>
+  
+
+  <body>
+
+  
+
+
+    <!-- You can move inline styles to css file or css block. -->
+<div class = "TopBar">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style = "background-color : #ADD8E6">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ComfortZone</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a style="color:#ffffff" href="MyWeb.html">Home</a></li>
+          <li><a style="color:#ffffff"href="friendpage.html"><span class="badge pull-right" style = "background-color :#FF0000">3</span>Friends</a>
+          </li>
+          <li><a style="color:#ffffff" href="messege.html"><span class="badge pull-right" style = "background-color :#FF0000">42</span>Messages</a></li>
+
+        <li>
+            <form class="navbar-form navbar-left" role="search" width:"200px">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+            
+                </div>
+        </li>
+        <li>
+            <div class = "button" style="margin-top:5px">
+            <button type="submit" class="btn btn-default" style = "background-color : #00CED1 ">Find my friends</button>
+            </div>
+        </li>
+
+      </ul>
+            
+    </form>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#ffffff">Parnchanok Skulbenja<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style = "background-color : #ADD8E6">
+            <li><a href="#" style= "color: #FFFFFF">Logout</a></li>
+            <li><a href="#" style= "color: #FFFFFF">Change account</a></li>
+            
+          </ul>
+        </li>
+        </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+     
+     
+     
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="myCss.css" rel="stylesheet">
+         <link href="css/test.css" rel="stylesheet">
+     
+        <!-- Loading Flat UI -->
+        <link href="css/flat-ui.css" rel="stylesheet">
+     
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <style type="text/css"> 
+        </style> 
+
+     
+     
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+
+
+
+      </head>
+
+<div class = "Top row" style="margin-top:70px">
+  <div class="col-xs-2 Sidebar" >
+
+        <div class = "button on Top" >
+        <h2 style= "color: #FFFFFF">CZone</h2>
+
+        </div>
+        
+        <div class : "log in ">
+        <form action="example.php" method="post">
+            <div>
+                <label style= "color: #FFFFFF" for="name" class="title">Username:</label>
+                <input type="text" id="name" name="name" />
+            </div>
+            <div>
+                <label style= "color: #FFFFFF" for="email" class="title">Password:</label><input type="password" id="psd" name="password" />
+            </div>
+                      
+
+        </form>
+
+        </div>
+
+        <div class="btn-group" style="margin-top:20px";>
+                <button style= "background-color: #6495ED" type="button" class="btn btn-default">Sign in </button>
+                <button style= "background-color:#0000FF" type="button" class="btn btn-default">Log in</button>
+        </div>
+
+        <div class="button-bottom" style="margin-top:50px">
+            <h8 style= "color: #FFFFFF">NeighbourHood</h8> 
+            <table>
+                <tr>
+                    <th><img src ="images/icons/PNG/facebook-icon.png" height="30px" width="30px"></th>
+                    <th><a href="http://www.facebook.com/" style = "font:Arial; font-size:16px; color: #FFFFFF";>&nbsp&nbsp Facebook</a></th>
+                </tr>
+
+                <tr>
+                    <th><img src ="images/icons/PNG/gmail.jpg" height="25px" width="30px"></th>
+                    <th><a href="http://www.gmail.com/" style = "font:Arial; font-size:16px; color: #FFFFFF";>&nbsp&nbsp Gmail</a></th>
+                </tr>
+
+                <tr>
+                    <th><img src ="images/icons/PNG/twitter.jpg" height="30px" width="30px"></th>
+                    <th><a href="http://www.twitter.com/"  style = "font:Arial; font-size:16px; color: #FFFFFF";>&nbsp&nbsp Twitter</a></th>
+                </tr>
+            </table>
+        </div>
+       </ul>
+       </div>
+
+
+
+  <div class="col-md-6 SlidePic">
+  	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px;
+        height: 300px; ">
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 620px; height: 380px;
+            overflow: hidden;">
+            <div><img u="image" src="images/FriendsPic/3.jpg" /></div>
+            <div><img u="image" src="images/FriendsPic/4.jpg" /></div>
+            <div><img u="image" src="images/FriendsPic/6.jpg" /></div>
+            <div><img u="image" src="images/FriendsPic/8.jpg" /></div>
+            <div><img u="image" src="images/FriendsPic/9.jpg" /></div>
+            
+        </div>
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            /* jssor slider arrow navigator skin 03 css */
+            /*
+            .jssora03l              (normal)
+            .jssora03r              (normal)
+            .jssora03l:hover        (normal mouseover)
+            .jssora03r:hover        (normal mouseover)
+            .jssora03ldn            (mousedown)
+            .jssora03rdn            (mousedown)
+            */
+            .jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(images/a03.png) no-repeat;
+                overflow:hidden;
+            }
+            .jssora03l { background-position: -3px -33px; }
+            .jssora03r { background-position: -63px -33px; }
+            .jssora03l:hover { background-position: -123px -33px; }
+            .jssora03r:hover { background-position: -183px -33px; }
+            .jssora03ldn { background-position: -243px -33px; }
+            .jssora03rdn { background-position: -303px -33px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">javascript</a>
+    </div>
+   </div>
+    <!-- Jssor Slider End -->
+
+	<!-- Name and detail-->
+	<div class = "col-md-6 Name">
+		<h5 style= "color: #FFFFFF"=  >Parnchanok Skulbenja</h5>
+	</div>
+	
+
+	<div class = "col-md-6 Detail" style="margin-top:10px">
+		<h6>My Profile</h6>
+        <div class="col-md-4 ProfileDetail">
+            <ul>
+                <li>Date of Birth :</li>
+                <li>Place of Birth :</li>
+                <li>Studied at :</li>
+                <li>Worked at :</li>
+                <li>Contact Information :</li>
+            </ul>
+
+        </div>
+
+    <div class="col-md-4 ProfileDetail2">
+            
+                <h10>18 Dec 1994</h10>
+                <br><h10>Bangkok, Thailand </h10></br>
+                <h10>Saint Joseph Convent</h10>
+                <br><h10>Thinc</h10></br>
+                <br><h10>ps_al_nightly@hotmail.com</h10></br>
+            
+
+    </div>
+
+
+        <img class = "swing" src = "images/FriendsPic/MyPic.jpg">
+        
+        
+	</div>
+</div>
+	
+	
+<div class= "Buttom" style="margin-top:70px;">
+	<div class = "col-md-5  Detail2">
+		<h6>My Fav Movies</h6>
+        <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles to css file or css block. -->
+    
+    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 640px;
+        height: 390px;">
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 500px; height: 280px;
+            overflow: hidden;">
+            <div>
+                <div u="player" style="position: relative; top: 0px; left: 0px; width: 500px; height: 280px; overflow: hidden;">
+                    <!-- iframe in ebay page is not allowed, youtube iframe video is not supported for ebay listing -->
+                    <iframe pHandler="ytiframe" pHideControls="0" width="640" height="390" style="z-index: 0;" url="http://www.youtube.com/embed/H7jtC8vjXw8?enablejsapi=1&version=3&playerapiid=ytplayer&fs=1&wmode=transparent" frameborder="0" scrolling="no"></iframe>
+                    <!-- play cover begin (optional, can remove play cover) -->
+                    <div u="cover" class="videoCover" style="position: absolute; top: 0px; left: 0px; background-color: #000; background-image: url(../img/play.png); background-position: center center; background-repeat: no-repeat; filter: alpha(opacity=40); opacity: .4; cursor: pointer; display: none; z-index: 1;"></div>
+                    <!-- play cover end -->
+                    <!-- close button begin (optional, can remove close button) -->
+                    <style>
+                        .closeButton { background-image: url(images/close.png); }
+                        .closeButton:hover { background-position: -30px 0px; }
+                    </style>
+                    <div u="close" class="closeButton" style="position: absolute; top: 0px; right: 1px;
+                        width: 30px; height: 30px; background-color: #000; cursor: pointer; display: none; z-index: 2;">
+                    </div>
+                    <!-- close button end -->
+                </div>
+            </div>
+        </div>
+        
+ 
+        <!-- Bullet Navigator Skin Begin -->
+        <style>
+            /* jssor slider bullet navigator skin 03 css */
+            /*
+            .jssorb03 div           (normal)
+            .jssorb03 div:hover     (normal mouseover)
+            .jssorb03 .av           (active)
+            .jssorb03 .av:hover     (active mouseover)
+            .jssorb03 .dn           (mousedown)
+            */
+            .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av
+            {
+                background: url(images/b03.png) no-repeat;
+                overflow:hidden;
+                cursor: pointer;
+            }
+            .jssorb03 div { background-position: -5px -4px; }
+            .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+            .jssorb03 .av { background-position: -65px -4px; }
+            .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb03" style="position: absolute; bottom: 6px; left: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 21px; HEIGHT: 21px; text-align:center; line-height:21px; color:White; font-size:12px;"><NumberTemplate></NumberTemplate></div>
+        </div>
+        <!-- Bullet Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">javascript</a>
+    </div>
+    <!-- Jssor Slider End -->
+	</div>
+
+	<div class = "col-md-4 Detail3 ">
+		<h6>My Favourite Songs</h6>
+        
+        <ul>
+            <li>Rueng jing : Singular</li>
+            <embed height = "70" width="300"src="media/singular.mp3">
+        </ul>
+        <h6>My Favourite Books</h6>
+            <ul>
+                <li>Serway</li>
+            </ul>
+        <h6>My Hobbies</h6>
+            <ul>
+                <li>Listen to music</li>
+            </ul>
+      
+                   
+    </div>          
+	</div>
+
+</div>
+	
+    <div class="col-md-6 PicShowcase" style="margin-top:70px">
+        <h3>My Gallery</h3>
+        <table>
+            <tr>
+                <th><img src ="images/FriendsPic/3.jpg" class="thumbnail" height="325px" width="450px"></th>
+                <th><img src ="images/FriendsPic/4.jpg" class="thumbnail" height="325px" width="450px"></th>
+                
+            </tr>
+        <table>
+            <tr>
+                <th><img src ="images/FriendsPic/10.jpg" class="thumbnail" height="225px" width="300px"></th>
+                <th><img src ="images/FriendsPic/2.jpg" class="thumbnail" height="225px" width="300px"></th>
+                <th><img src ="images/FriendsPic/11.jpg" class="thumbnail" height="225px" width="300px"></th>
+              
+            </tr>
+
+            <tr>
+                <th><img src ="images/FriendsPic/5.jpg" class="thumbnail" height="225px" width="300px"></th>
+                <th><img src ="images/FriendsPic/6.jpg" class="thumbnail" height="225px" width="300px"></th>
+                <th><img src ="images/FriendsPic/12.jpg" class="thumbnail" height="225px" width="300px"></th>
+              
+            </tr>
+        <table>
+            
+        </table>
+    </div>
+
+    <div id="popup">
+    <div id="center">
+        <img id="lightbox" src="images/FriendsPic/3.jpg" >
+        <img id="close" src="images/close.png" alt="close" >
+    </div>  <!-- #center --> 
+    </div>  <!-- #popup -->  
+	
+
+	
+
+  <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (39KB) or jssor.sliderc.mini.js (31KB, with caption, no slideshow) or jssor.sliders.mini.js (26KB, no caption, no slideshow) instead for release -->
+    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.core.js"></script>
+    <script type="text/javascript" src="js/jssor.utils.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 0,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+    </script>
+    <!-- Jssor Slider Begin -->
+
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (39KB) or jssor.sliderc.mini.js (31KB, with caption, no slideshow) or jssor.sliders.mini.js (26KB, no caption, no slideshow) instead for release -->
+    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.core.js"></script>
+    <script type="text/javascript" src="js/jssor.utils.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <!-- use jssor.slider.player.ytiframe.min.js for release -->
+    <script type="text/javascript" src="js/jssor.player.ytiframe.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $DragOrientation: 3,                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $AutoPlayInterval: 4000,            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
+                $ArrowKeyNavigation: true,          //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+
+                $BulletNavigatorOptions: {                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $ActionMode: 1,                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $AutoCenter: 1,                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 10,                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 0,                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 640));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            //Scale slider immediately
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
+
+
+            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+            //    $(window).bind("orientationchange", ScaleSlider);
+            //}
+            //responsive code end
+
+            //fetch and initialize youtube players
+            $JssorPlayer$.$FetchPlayers(document.body);
+        });
+    </script>
+  </body>
+</html>

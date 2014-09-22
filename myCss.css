@@ -1,0 +1,84 @@
+.TopBar {
+	min-width: 1200px;
+}
+
+.Sidebar{
+	display: inline;
+	background-color:#092D80;
+	width: 230px;
+	height: 500px;
+	min-width: 220px;
+	margin: 0 0 0 160px;
+
+}
+
+.btn-group{
+	margin: 0 0 0 20px;
+}
+
+.SlidePic{
+	background-color: #092D80;
+	margin: 0 0 0 20px;
+	height:420px;
+}
+
+.Name{
+	background:#6894F3;
+	margin: 0 0 0 20px;
+	min-width: 650px
+	
+}
+
+.Detail{
+	background:#DFD8D8;
+	margin: 0 0 0 20px;
+	min-width: 650px;
+}
+
+.Detail2{
+	background:#DFD8D8;
+	width: 550px;
+	min-width: 540px;
+	height: 400px;
+	min-height: 390px;
+	margin: 0 0 20px 145px;
+	
+}
+
+.Detail3{
+	background:#DFD8D8;
+	margin: 0 0 0 20px;
+	width: 370px;
+	min-height: 400px;
+	min-width: 370px;
+	height: 400px;
+
+}
+
+.Buttom{
+	margin: 0 0 0 0;
+
+}
+
+.PsofileDetail{
+	float:right;
+	
+}
+.ProfileDetail2{
+	margin: 0 30px 0 0;
+}
+
+.PicShowcase{
+    background-color:#DFD8D8;
+    margin: 0 70px 70px 150px;
+    min-height: 900px;
+    min-width: 930px;
+    width: 935px;
+    height: 900px; 
+   
+    
+}
+
+.pbackG{
+	margin: 0 0 30px 0;
+}
